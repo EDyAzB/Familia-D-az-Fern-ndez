@@ -1,0 +1,24 @@
+<div class="conteiner">
+  <h1>Miembros de Nuestra Familia</h1>
+  <table class="table table-dark table-hover table align-middle">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Miembro</th>
+          <th scope="col" class="button-column"></th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (miembro of familiaList; track $index) {
+        <tr>
+          <th scope="row">{{miembro.id}}</th>
+          <td>{{miembro.nombre}}</td>
+          <td>{{miembro.apellidos}}</td>
+          <td>{{miembro.tipoMiembro}}</td>
+         <td><button type="button" class="btn btn-primary" [routerLink]="['/familia',miembro.id]">Detalles</button></td> 
+        </tr>}
+      </tbody>
+    </table>
+  </div>

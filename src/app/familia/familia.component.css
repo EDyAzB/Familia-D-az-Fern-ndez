@@ -1,0 +1,7 @@
+.conteiner{
+    display: grid;
+    justify-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 60px;
+}

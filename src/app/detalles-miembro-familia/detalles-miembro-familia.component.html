@@ -1,0 +1,20 @@
+
+
+
+
+<div class="conteiner">
+    @if (loading) {
+        <h5>Loading...</h5>
+        }
+        @if(!loading){
+            <div class="card" style="width: 40rem;" >
+                <img src="{{persona?.foto}}" class="card-img-top" alt="{{persona?.nombre}}">
+                <div class="card-body">
+                  <h4>{{persona?.nombre}} {{persona?.apellidos}}</h4>
+                  <h5 class="card-title">Edad: {{persona?.edad}} años</h5>
+                  <p class="card-text-start">{{persona?.descripcion}}</p>     
+                </div>
+              </div>
+        
+        }
+</div>
